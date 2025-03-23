@@ -1,0 +1,25 @@
+{
+    "projects": [
+      {
+        "name": "OtoFinder",
+        "url": "https://colab.research.google.com/drive/1wmcwf-rKtdnS0zxcdUPLrIBr7ac8B-65?usp=sharing",
+        "description": "人力ボカロ用音素検出ツール"
+      },
+      {
+        "name": "GetNicoLinks",
+        "url": "https://github.com/E-tum/GetNicoLinks",
+        "description": "ニコニコ動画のリンクを取得するブックマークレット"
+      },
+      {
+        "name": "VoiceTransclipper",
+        "url": "https://colab.research.google.com/drive/1UbahAgkcvpdK5Tj7lcQIfxs9ycD-L6M8?usp=sharing",
+        "description": "セリフ切り分け&文字起こしツール"
+      },
+      {
+        "name": "FrameSegmentation",
+        "url": "https://colab.research.google.com/drive/18cePzwAPK0gX3eEfwaJz8g1HuU_wgoOp#scrollTo=vauB5mnvQ0b3",
+        "description": "動画背景切り抜きツール（二次元素材用）"
+      }
+    ]
+  }
+  

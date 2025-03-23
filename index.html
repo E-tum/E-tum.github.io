@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-lab.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <h1>E-lab.</h1>
+            <p>自作プログラムのリンク集</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="projects">
+            <h2>Code & Tools</h2>
+            <table id="projects-table">
+                <!-- ヘッダ行 -->
+                <thead>
+                    <tr>
+                        <th>プロジェクト名</th>
+                        <th>説明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Projects will be loaded here dynamically -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div>Made by E-tum</div>
+        <div class="contact-icons">
+            <a href="https://x.com/E__tum" target="_blank"><img src="assets/icons/twitter.svg" alt="Twitter"></a>
+            <a href="https://www.nicovideo.jp/user/69717079" target="_blank"><img src="assets/icons/niconico.svg" alt="Niconico"></a>
+            <a href="https://e-tum.hatenablog.com/" target="_blank"><img src="assets/icons/blog.svg" alt="Blog"></a>
+        </div>
+    </footer>
+
+    <script>
+        fetch('projects.json')
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.querySelector('#projects-table tbody');
+                data.projects.forEach(project => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td><a href="${project.url}" target="_blank">${project.name}</a></td>
+                        <td>${project.description}</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch(error => console.error('Error loading projects:', error));
+    </script>
+</body>
+</html>

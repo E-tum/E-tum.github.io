@@ -1,0 +1,107 @@
+/* フォントのインポート */
+@import url('http://fonts.googleapis.com/earlyaccess/notosansjp.css');
+
+/* 全体のフォントと背景設定 */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* 全体の背景色 */
+    color: #333;
+}
+
+/* ヘッダーの設定 */
+header {
+    background-color: #007fff; /* テーマカラー */
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* サイトのメインコンテンツ */
+main {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* セクション見出し */
+section h2 {
+    font-size: 28px;
+    color: #007fff; /* 見出しにテーマカラー */
+    border-bottom: 2px solid #007fff;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+/* プロジェクト一覧 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #007fff; /* ヘッダー背景 */
+    color: white;
+}
+
+table a {
+    color: #007fff;
+    text-decoration: none;
+}
+
+/* フッター */
+footer {
+    background-color: #ffffff;  /* 明るい背景色 */
+    color: #333;  /* 文字色 */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);  /* フッターに軽い影を付けて区別 */
+}
+
+footer .contact-icons {
+    display: flex;
+    gap: 15px;
+}
+
+footer .contact-icons a {
+    display: inline-block;
+}
+
+footer .contact-icons a img {
+    width: 24px;
+    height: 24px;
+    fill: #007fff; /* アイコンの色 */
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer .contact-icons {
+        margin-top: 10px;
+    }
+}
