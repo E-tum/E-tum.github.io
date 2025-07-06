@@ -2,7 +2,7 @@
     "projects": [
       {
         "name": "OtoFinder",
-        "url": "pages/otofinder.html",
+        "url": "https://colab.research.google.com/drive/1wmcwf-rKtdnS0zxcdUPLrIBr7ac8B-65?usp=sharing",
         "description": "人力ボカロ用音素検出ツール"
       },
       {
