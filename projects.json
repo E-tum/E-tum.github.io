@@ -2,7 +2,7 @@
     "projects": [
       {
         "name": "OtoFinder",
-        "url": "https://colab.research.google.com/drive/1wmcwf-rKtdnS0zxcdUPLrIBr7ac8B-65?usp=sharing",
+        "url": "pages/otofinder.html",
         "description": "人力ボカロ用音素検出ツール"
       },
       {
@@ -14,6 +14,11 @@
         "name": "VoiceTransclipper",
         "url": "https://colab.research.google.com/drive/1UbahAgkcvpdK5Tj7lcQIfxs9ycD-L6M8?usp=sharing",
         "description": "セリフ切り分け&文字起こしツール"
+      },
+      {
+        "name": "SplitBySRT",
+        "url": "https://github.com/E-tum/SplitBySRT",
+        "description": "REAPER上で字幕データ（.srtファイル）を使って音声を切り分けるスクリプト"
       },
       {
         "name": "FrameSegmentation",
