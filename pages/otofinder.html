@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OtoFinder</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/otofinder.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <a href="../index.html" id="site-title">E-lab.</a>
+    </header>
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #007fff;
+            color: white;
+        }
+        textarea, button {
+            padding: 10px;
+            margin-top: 10px;
+            width: 100%;
+            max-width: 600px;
+        }
+    </style>
+
+
+    <main>
+        <section>
+            <h2>OtoFinder</h2>
+            <p>テキストを入力して人力ボカロ用の音素を検出します。</p>
+
+            <form id="otofinder-form">
+                <textarea id="input-text" rows="6" placeholder="ここにテキストを入力"></textarea>
+                <button type="submit">音素を検出</button>
+            </form>
+
+            <div class="result">
+                <h2>結果:</h2>
+                <table>
+                    <tr>
+                        <th>項目</th>
+                        <th>結果</th>
+                    </tr>
+                    <tr>
+                        <td>音の数</td>
+                        <td><span id="num-results">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>残りの文字</td>
+                        <td><pre id="remaining-text"></pre></td>
+                    </tr>
+                    <tr>
+                        <td>発見された文字列</td>
+                        <td><pre id="kana-results"></pre></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>Made by E-tum</div>
+        <div class="contact-icons">
+            <a href="https://x.com/E__tum" target="_blank"><img src="../assets/icons/twitter.svg" alt="Twitter"></a>
+            <a href="https://www.nicovideo.jp/user/69717079" target="_blank"><img src="../assets/icons/niconico.svg" alt="Niconico"></a>
+            <a href="https://e-tum.hatenablog.com/" target="_blank"><img src="../assets/icons/blog.svg" alt="Blog"></a>
+        </div>
+    </footer>
+
+</body>
+</html>

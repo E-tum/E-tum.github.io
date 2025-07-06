@@ -19,9 +19,32 @@ header {
 }
 
 header h1 {
+    text-decoration: none; /* 下線を消す */
     margin: 0;
     font-size: 36px;
 }
+
+header a {
+    color: white;; /* リンクの色 */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+header a:hover {
+    text-decoration: underline; /* ホバー時に下線を表示 */
+}
+
+#site-title {
+    text-decoration: none; /* 下線を消す */
+    color: #007fff; /* テーマカラー */
+    font-weight: bold;
+    font-size: 36px;
+}
+
+#site-title:visited {
+    color: white;
+}
+
 
 /* サイトのメインコンテンツ */
 main {
